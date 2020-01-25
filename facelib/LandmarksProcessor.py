@@ -274,7 +274,7 @@ def get_transform_mat (image_landmarks, output_size, face_type, scale=1.0):
     elif face_type == FaceType.MID_FULL:
         padding = int(output_size * 0.06)
     elif face_type == FaceType.FULL:
-        padding = (output_size / 64) * 12
+        padding = (output_size / 64) * 21
     elif face_type == FaceType.HEAD:
         padding = (output_size / 64) * 21
     else:
