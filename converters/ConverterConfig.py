@@ -198,10 +198,10 @@ class ConverterConfigMasked(ConverterConfig):
         self.mask_mode = a[ (a.index(self.mask_mode)+1) % len(a) ]
 
     def add_erode_mask_modifier(self, diff):
-        self.erode_mask_modifier = np.clip ( self.erode_mask_modifier+diff , -800, 800)
+        self.erode_mask_modifier = np.clip ( self.erode_mask_modifier+diff , -1200, 1200)
 
     def add_blur_mask_modifier(self, diff):
-        self.blur_mask_modifier = np.clip ( self.blur_mask_modifier+diff , -800, 800)
+        self.blur_mask_modifier = np.clip ( self.blur_mask_modifier+diff , -1200, 1200)
 
     def add_motion_blur_power(self, diff):
         self.motion_blur_power = np.clip ( self.motion_blur_power+diff, 0, 100)
