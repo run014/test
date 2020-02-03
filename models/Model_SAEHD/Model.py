@@ -525,7 +525,8 @@ class SAEHDModel(ModelBase):
             elif self.options['face_type'] == 'f':
                 face_type = t.FACE_TYPE_FULL
 
-            t_mode_bgr = t.MODE_BGR if not self.pretrain else t.MODE_BGR_SHUFFLE
+            #t_mode_bgr = t.MODE_BGR if not self.pretrain else t.MODE_BGR_SHUFFLE
+            t_mode_bgr = t.MODE_BGR_SHUFFLE
 
             training_data_src_path = self.training_data_src_path
             training_data_dst_path = self.training_data_dst_path
